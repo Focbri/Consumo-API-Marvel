@@ -3,7 +3,6 @@
     const API_URL = "https://whenisthenextmcufilm.com/api";
     #inicializamos la sesion de cURL; ch = cURL handle
     $ch = curl_init(API_URL);
-    #indiacar que queremos recibir el resultado de la peticion y no mostrarla en pantalla
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $result = curl_exec($ch);
     $data = json_decode($result, true);
@@ -11,6 +10,7 @@
     curl_close($ch);
 ?>
 
+    #indiacar que queremos recibir el resultado de la peticion y no mostrarla en pantalla
 <head>
     <title>La próxima película de Marvel</title>
     <meta charset="UTF-8">
