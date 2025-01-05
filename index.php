@@ -10,7 +10,6 @@
     curl_close($ch);
 ?>
 
-    #indiacar que queremos recibir el resultado de la peticion y no mostrarla en pantalla
 <head>
     <title>La próxima película de Marvel</title>
     <meta charset="UTF-8">
@@ -27,13 +26,6 @@
         <p>La siguiente película de Marvel es: <span style="font-weight: bold;"><?=$data["following_production"]["title"]; ?></span></p>
     </hgroup>
 </main>
-
-
-
-
-
-
-
 
 
 <style>
